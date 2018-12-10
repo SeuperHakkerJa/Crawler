@@ -28,9 +28,11 @@ public class Bot {
 
     try {
       u = new URL(url);
+
       URLConnection urlConnection = u.openConnection();
-      urlConnection.setRequestProperty("User-Agent", "BOT/1.0");
-      urlConnection.setRequestProperty("Accept-Charset", "UTF-8");
+
+      //urlConnection.setRequestProperty("User-Agent", "BOT/1.0");
+      //urlConnection.setRequestProperty("Accept-Charset", "UTF-8");
       InputStream input = urlConnection.getInputStream();
       BufferedReader reader = new BufferedReader(new InputStreamReader(input));
 
